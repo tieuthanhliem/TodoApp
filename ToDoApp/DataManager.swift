@@ -71,7 +71,7 @@ public class DataManager {
   }
   
   // Load all files from directory
-  static func loadAll<T:Decodable> (with type:T.Type)->[T]{
+  static func loadAll<T:Decodable> (_ type:T.Type)->[T]{
     do {
       let files = try FileManager.default.contentsOfDirectory(atPath: getDcumentDirectory().path)
       

@@ -74,7 +74,7 @@ class TodoTableViewController: UITableViewController {
 // MARK - Define Actions
 //
 extension TodoTableViewController{
-  @IBAction func showConectivityAction(_ sender: Any) {
+  @IBAction func showConnectivityActions(_ sender: Any) {
     let actionSheet = UIAlertController(title: "Todo Exchange", message: "Do you want to host or join a section?", preferredStyle: .actionSheet)
     
     actionSheet.addAction(UIAlertAction(title: "Host a section", style: .default, handler: { (_) in

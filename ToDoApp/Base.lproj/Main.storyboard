@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3cO-rs-13u">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -72,7 +72,7 @@
                     <navigationItem key="navigationItem" title="To Do List" id="bgq-85-67F">
                         <barButtonItem key="leftBarButtonItem" systemItem="action" id="6bH-CL-ire">
                             <connections>
-                                <action selector="showConectivityAction:" destination="xQH-2G-25b" id="6N5-PE-MCe"/>
+                                <action selector="showConnectivityActions:" destination="xQH-2G-25b" id="fuV-Vo-adv"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lYl-He-Y3s">
