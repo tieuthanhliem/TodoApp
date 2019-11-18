@@ -18,7 +18,7 @@ class TodoTableViewCell: UITableViewCell {
   
   @IBOutlet weak var todoLabel: UILabel!
   
-  var delegte: TodoCellDelegate?
+  var delegate: TodoCellDelegate?
   
   override func awakeFromNib() {
     super.awakeFromNib()
@@ -26,15 +26,15 @@ class TodoTableViewCell: UITableViewCell {
   }
   
   @IBAction func completeToDo(_ sender: Any) {
-    delegte?.didRequestComplete(self)
+    delegate?.didRequestComplete(self)
   }
   
   @IBAction func deleteToDo(_ sender: Any) {
-    delegte?.didRequestDelete(self)
+    delegate?.didRequestDelete(self)
   }
   
   @IBAction func shareTodo(_ sender: Any) {
-    delegte?.didRequestShare(self)
+    delegate?.didRequestShare(self)
   }
   
   override func setSelected(_ selected: Bool, animated: Bool) {

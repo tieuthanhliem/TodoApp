@@ -74,7 +74,7 @@ class TodoTableViewController: UITableViewController {
 // MARK - Define Actions
 //
 extension TodoTableViewController{
-  @IBAction func showConnectivityActions(_ sender: Any) {
+  @IBAction func showConectivityAction(_ sender: Any) {
     let actionSheet = UIAlertController(title: "Todo Exchange", message: "Do you want to host or join a section?", preferredStyle: .actionSheet)
     
     actionSheet.addAction(UIAlertAction(title: "Host a section", style: .default, handler: { (_) in
@@ -130,6 +130,7 @@ extension TodoTableViewController: TodoCellDelegate {
   func didRequestDelete(_ cell: TodoTableViewCell) {
     guard let indexPath = self.tableView.indexPath(for: cell) else { return }
     
+    cell.todoLabel.attributedText = NSMutableAttributedString()
     todoItems[indexPath.row].deleteItem()
     todoItems.remove(at: indexPath.row)
     self.tableView.deleteRows(at: [indexPath], with: .automatic)
